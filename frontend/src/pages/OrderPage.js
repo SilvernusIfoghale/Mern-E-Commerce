@@ -81,7 +81,7 @@ const OrderPage = () => {
                       {item.shipping_options.map((shipping, index) => {
                         return (
                           <div key={shipping.shipping_rate} className=" ml-1">
-                            Shipping Amount : {shipping.shipping_amount}
+                            Shipping Amount : #{shipping.shipping_amount}
                           </div>
                         );
                       })}
@@ -90,7 +90,7 @@ const OrderPage = () => {
                 </div>
 
                 <div className="font-semibold ml-auto w-fit lg:text-lg">
-                  Total Amount : {item.totalAmount}
+                  Total Amount : #{item.totalAmount}
                 </div>
               </div>
             </div>
